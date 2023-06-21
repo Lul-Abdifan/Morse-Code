@@ -19,7 +19,7 @@
 - [📝 License](#license)
 
 
-# 📖 [Morse Code] <a name="about-project"></a>
+# 📖 Morse Code <a name="about-project"></a>
 
 **Morse Code** is a project that aims to provide a convenient way to encode and decode Morse code using the Ruby programming language. This project allows users to easily convert Morse code into text, providing a valuable tool for learning Morse code or integrating Morse code functionality into other Ruby applications.
 
@@ -75,11 +75,9 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  run rubocop --color
+  run rubocop
 ```
-
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Abdi Bekele**
 
