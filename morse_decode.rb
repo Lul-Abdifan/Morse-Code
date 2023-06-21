@@ -37,8 +37,8 @@ def decode_word(word)
   decoded_word = ''
   split_word = word.split
   split_word.each do |character|
-    more_match = MORSE_CODE_TABLE[character]
-    decoded_word += more_match if more_match
+    decoded_character = MORSE_CODE_TABLE[character]
+    decoded_word += decoded_character if decoded_character
   end
   decoded_word
 end
