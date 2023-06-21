@@ -19,4 +19,4 @@ jobs:
       - name: Rubocop Report
         run: rubocop --color
 
-        ss
+        
