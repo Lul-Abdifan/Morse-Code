@@ -1,3 +1,4 @@
+# A hash table mapping Morse code to letters
 MORSE_CODE_TABLE = {
   '.-': 'A',   '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E',
   '..-.': 'F', '--.': 'G', '....': 'H', '..': 'I', '.---': 'J',
@@ -7,10 +8,12 @@ MORSE_CODE_TABLE = {
   '--..': 'Z'
 }.freeze
 
+# Decodes a single Morse code character
 def decode_char(character)
   MORSE_CODE_TABLE[character]
 end
 
+# Decodes a single Morse code word
 def decode_word(word)
   decoded_word = ''
   split_word = word.split
@@ -21,12 +24,14 @@ def decode_word(word)
   decoded_word
 end
 
+# Decodes a full Morse code statement
 def decode(statement)
   split_statement = statement.split('   ')
   overall = split_statement.map { |word| decode_word(word) }
   overall.join(' ')
 end
 
+# Example usage
 puts decode_char('.-')
 puts decode_word('-- -.--')
 puts decode('-- -.--   -. .- -- .')
