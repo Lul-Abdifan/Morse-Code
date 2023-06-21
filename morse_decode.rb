@@ -16,7 +16,7 @@ end
 # Decodes a single Morse code word
 def decode_word(word)
   decoded_word = ''
-  chars = word.split(' ')
+  chars = word.split
   chars.each do |character|
     letter = decode_char(character)
     decoded_word += letter if letter
